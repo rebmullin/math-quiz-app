@@ -1,0 +1,13 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    color: red;
+  }
+
+  .correct {
+    color: green;
+  }
+}
