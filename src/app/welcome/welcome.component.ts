@@ -7,7 +7,7 @@ import { QuestionsService } from "../questions.service";
   styleUrls: ["./welcome.component.scss"]
 })
 export class WelcomeComponent implements OnInit {
-  private quizzes: any;
+  public quizzes: any;
 
   constructor(private questionsServices: QuestionsService) {
     this.quizzes = this.questionsServices.getQuizzes();
