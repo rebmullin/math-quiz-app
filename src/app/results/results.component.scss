@@ -1,9 +1,14 @@
 .results {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  div {
+  mat-list {
+    min-width: 200px;
+  }
+
+  mat-list-item {
     color: red;
   }
 

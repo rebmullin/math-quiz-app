@@ -2,10 +2,15 @@
   <h1>{{ question.label }}</h1>
   <form [formGroup]="form">
     <div class="form-group">
-      <label *ngFor="let choice of question.choices">
-        <input type="radio" [value]="choice" formControlName="choice" />
-        <span>{{ choice.value }}</span>
-      </label>
+      <mat-grid-list cols="2" rowHeight="100px">
+        <label *ngFor="let choice of question.choices">
+          <mat-grid-tile>
+            <input type="radio" [value]="choice" formControlName="choice" />
+
+            <span>{{ choice.value }}</span>
+          </mat-grid-tile>
+        </label>
+      </mat-grid-list>
     </div>
   </form>
 </div>

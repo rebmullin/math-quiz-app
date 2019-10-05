@@ -1,12 +1,12 @@
-<mat-card>
-  <div class="welcome">
-    <mat-card-title>Welcome</mat-card-title>
-    <div *ngIf="quizzes.length">
-      <div class="stuff" *ngFor="let quiz of quizzes">
+<div class="welcome">
+  <mat-card-title>Take a Quiz!</mat-card-title>
+  <div *ngIf="quizzes.length">
+    <mat-list>
+      <mat-list-item class="stuff" *ngFor="let quiz of quizzes">
         <a [routerLink]="['/', quiz.name]">
           {{ quiz.name | uppercase }}
         </a>
-      </div>
-    </div>
+      </mat-list-item>
+    </mat-list>
   </div>
-</mat-card>
+</div>

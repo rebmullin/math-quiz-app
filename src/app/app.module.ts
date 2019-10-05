@@ -10,7 +10,12 @@ import { RouterModule, Routes } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { QuestionsComponent } from "./questions/questions.component";
-import { MatCardModule } from "@angular/material";
+import {
+  MatCardModule,
+  MatGridListModule,
+  MatDividerModule,
+  MatListModule
+} from "@angular/material";
 
 const appRoutes: Routes = [
   { path: "welcome", component: WelcomeComponent },
@@ -32,7 +37,10 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

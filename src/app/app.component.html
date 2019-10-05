@@ -4,9 +4,14 @@
       [question]="quiz.questions[currentQuestionIndex]"
       (onChoiceMade)="updateChoice($event)"
     ></app-question-form>
+    <!--
+    <button class="md-button md-raised" @click="removeTodo(todo)">
+        <span class="md-button__label">Delete</span>
+      </button> -->
 
     <button
-      class="btn btn-success"
+      class="mat-button mat-raised-button"
+      color="primary"
       (click)="nextOrViewResults()"
       [disabled]="!answers.values[currentQuestionIndex]"
     >
